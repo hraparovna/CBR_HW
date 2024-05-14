@@ -9,7 +9,7 @@ app = Flask(__name__)
 def single_converter():
 
     plot = get_plot()
-    plot.savefig(os.path.join('static', 'images', 'plot.png'))
+    plot.savefig(os.path.join('../static', 'images', 'plot.png'))
 
     return render_template('ipc_fcs.html')
 
