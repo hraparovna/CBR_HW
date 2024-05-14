@@ -2,12 +2,10 @@ FROM python:3.9
 
 EXPOSE 5000
 
-WORKDIR /app
+WORKDIR /CBR_HW
 
-COPY requirements.txt /app
+COPY ./CBR_HW
 
 RUN pip install -r requirements.txt
-
-COPY app.py /app
 
 CMD ["python", "app.py"]
